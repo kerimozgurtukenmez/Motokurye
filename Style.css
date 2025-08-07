@@ -1,0 +1,127 @@
+/* Sayfa özel arka plan */
+body.register-page {
+    background-color: #f8f9fa;
+}
+
+/* Kayıt kutusu stilleri */
+.form-box{
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+/* Responsive bölme */
+@media (min-width: 768px) {
+    .form-box-wrapper {
+        display: flex;
+    }
+    .form-left,
+    .form-right {
+        flex: 1;
+    }
+    .form-right {
+        border-left: 1px solid #dee2e6;
+        padding-left: 2rem;
+    }
+}
+/* Body CSS */
+/*body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('images/doge.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px) brightness(0.5);
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(255,255,255,0.3);
+    z-index: -1;
+}
+
+
+body {
+    position: relative;
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+    color: #222;
+} */
+/* svg css */
+svg {
+    overflow: visible;
+}
+svg path {
+    fill: #ffffff;
+    stroke: #000;
+    cursor: pointer;
+    transition: fill 0.2s ease, filter 0.2s ease, transform 0.2s ease;
+    filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0)); /* normalde gölge yok */
+}
+
+svg path:hover {
+    fill: #2871fa;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.6)); /* daha büyük ve koyu gölge */
+    transform: scale(1.005); /* hafif büyüme */
+}
+
+/* Custom */
+.custom-section {
+    background-color: #ffffff; /* Bootstrap light blue 100 tonu */
+}
+
+
+/* Text Css*/
+/* Hafif Gölge */
+.text-shadow-sm {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Orta Gölge */
+.text-shadow {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Büyük, Yumuşak Gölge */
+.text-shadow-lg {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Işıltılı Parıltı - Beyaz Yazı İçin */
+.text-glow {
+    text-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #0d6efd,
+    0 0 20px #0d6efd;
+}
+
+/* Renkli Neon Mavi */
+.text-neon-blue {
+    color: #0dcaf0;
+    text-shadow: 0 0 5px #0dcaf0, 0 0 10px #0dcaf0, 0 0 15px #0dcaf0;
+}
+
+/* Renkli Neon Yeşil */
+.text-neon-green {
+    color: #198754;
+    text-shadow: 0 0 5px #198754, 0 0 10px #198754, 0 0 15px #198754;
+}
+
+/* Renkli Neon Kırmızı */
+.text-neon-red {
+    color: #dc3545;
+    text-shadow: 0 0 5px #dc3545, 0 0 10px #dc3545, 0 0 15px #dc3545;
+}
+
+/* Retro Sarı Parıltı */
+.text-glow-yellow {
+    color: #ffc107;
+    text-shadow: 0 0 5px #ffc107, 0 0 10px #ffc107, 0 0 20px #ffecb3;
+}
